@@ -1,0 +1,6 @@
+
+train: C:\Users\fayaf\Downloads\FaceRec_Rahmath\Q2_Rahmath\vehicle_dataset\images\train
+val: C:\Users\fayaf\Downloads\FaceRec_Rahmath\Q2_Rahmath\vehicle_dataset\images\val
+
+nc: 14
+names: [ 'truck', 'license_plate', 'logo', 'car', 'bike', 'bus', 'nissan', 'toyota', 'isuzu', 'mitsubishi', 'proton', 'mazda', 'mercedes', 'honda' ]
