@@ -43,15 +43,16 @@ names:
   [ 'truck', 'license_plate', 'logo', 'car', 'bike', 'bus',
     'nissan', 'toyota', 'isuzu', 'mitsubishi', 'proton',
     'mazda', 'mercedes', 'honda' ]
-⚙️ Installation
+
+
+
+## Installation
 Clone the repository
-
-
-git clone https://github.com/<your_username>/vehicle-attribute-identification.git
+git clone https://github.com/r3hmath/SolvAI-Vehicle-Attribute-Detection.git
 cd vehicle-attribute-identification
+
+
 Create a virtual environment
-
-
 python -m venv venv
 source venv/bin/activate     # on Linux/Mac
 venv\Scripts\activate        # on Windows
@@ -62,12 +63,11 @@ Set up model path
 Make sure MODEL_PATH in api/model.py points to your trained YOLOv8 weights:
 
 python
-Copy code
+
 MODEL_PATH = "path/to/yolov8_vehicle_model/weights/best.pt"
 🚀 Running the System
 1️⃣ Start the FastAPI Backend
-bash
-Copy code
+
 uvicorn api.main:app --reload
 The API will be live at: http://127.0.0.1:8000
 
@@ -76,8 +76,7 @@ Test it via Swagger UI: http://127.0.0.1:8000/docs
 /predict Endpoint
 Request:
 
-bash
-Copy code
+bash:
 POST /predict
 Content-Type: multipart/form-data
 Body:
@@ -177,8 +176,7 @@ You’re free to use, modify, and distribute — with attribution.
 📬 Contact
 For issues, improvements, or collaboration, open an issue or contact the developer:
 
-Author: [Your Name]
-Email: your_email@example.com
-GitHub: https://github.com/<your_username>
+Author: solvAI
+Email: r3hmath84@gmail.com
+GitHub: https://github.com/r3hmath
 
-yaml
